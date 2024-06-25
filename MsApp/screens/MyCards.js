@@ -1,10 +1,14 @@
-import { View, Text, StyleSheet } from "react-native"
+import { View, Text, StyleSheet, Image } from "react-native"
 
 const MyCards = () => {
     return(
         <View>
-            <Text>Hello Beautiful Cards</Text>
+            <Text>Welcome to your available cards</Text>
+            <View style={{ marginTop: 20, alignItems: 'center'}}>
+                <Image source={require('../images/Card.png')} />
+            </View>
         </View>
+        
     )
 }
 

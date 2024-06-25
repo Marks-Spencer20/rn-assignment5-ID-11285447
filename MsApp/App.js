@@ -8,11 +8,13 @@ import Home from './screens/Home';
 import Settings from './screens/Settings';
 import MyCards from './screens/MyCards';
 import Statistics from './screens/Statistics';
+import { ThemeProvider } from './components/ThemeContext';
 
 export default function App() {
   const Tab = createBottomTabNavigator();
   return (
-    <NavigationContainer>
+    <ThemeProvider>
+<NavigationContainer>
     <SafeAreaProvider>
       <Tab.Navigator
 
@@ -58,6 +60,7 @@ export default function App() {
       </Tab.Navigator>
     </SafeAreaProvider>
   </NavigationContainer>
+    </ThemeProvider>
 );
 }
 
