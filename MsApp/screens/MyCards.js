@@ -1,14 +1,14 @@
 import { View, Text, StyleSheet } from "react-native"
 
-const Statistics = () => {
+const MyCards = () => {
     return(
         <View>
-            <Text>Hello Beautiful Stats</Text>
+            <Text>Hello Beautiful Cards</Text>
         </View>
     )
 }
 
-export default Statistics;
+export default MyCards;
 
 const style = StyleSheet.create({
     
