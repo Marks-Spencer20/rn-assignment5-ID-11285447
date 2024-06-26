@@ -30,7 +30,7 @@ const TransactionItem = ({ description, subDescription, amount, image }) => {
                     <Text style={[styles.description, isEnabled && styles.blueContainer]}>{description}</Text>
                     <Text style={styles.subDescription}>{subDescription}</Text>
                 </View>
-                <Text style={styles.amount}>{amount}</Text>
+                <Text style={[styles.amount, isEnabled && styles.blueContainer]}>{amount}</Text>
             </View>
         </View>
     );
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     amount: {
         fontSize: 16,
         fontWeight: 'bold',
-        color: '#f00',
+        color: 'black',
     },
     darkContainer: {
         backgroundColor: 'black'
